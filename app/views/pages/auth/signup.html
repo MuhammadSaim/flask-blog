@@ -1,0 +1,36 @@
+{% extends "layouts/app.html" %}
+
+{% block title %} Sign up {% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row min-vh-100 justify-content-center align-items-center">
+            <div class="col-md-6">
+                <form action="" method="post">
+                    <div class="card">
+                        <div class="card-header">
+                            SIGNUP
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="full_name">Full Name</label>
+                                <input type="text" id="full_name" name="full_name" class="form-control" placeholder="Full Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password" class="form-control" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">SIGN UP</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
