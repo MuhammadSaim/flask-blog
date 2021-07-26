@@ -7,10 +7,12 @@
 </head>
 <body>
 
-    {% include 'includes/navbar.html' %}
+    {% include 'includes/navbar.jinja2' %}
 
     {% block content %}{% endblock %}
 
+
+    <script src="{{ url_for("static", filename="app.js") }}"></script>
     {% block scripts %}{% endblock %}
 </body>
 </html>

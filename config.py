@@ -19,3 +19,6 @@ class Config:
     # Flask-SQLAlchemy
     SQLALCHEMY_DATABASE_URI = environ.get('SQLALCHEMY_DATABASE_URI')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+
+    # Debug Toolbar
+    DEBUG_TB_PROFILER_ENABLED = False

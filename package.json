@@ -1,0 +1,13 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://gitlab.com/dw16/blog-and-private-journaling-webapp.git",
+  "author": "Muhammad Saim <muhammadsaim494@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@symfony/webpack-encore": "^1.5.0",
+    "sass": "^1.36.0",
+    "sass-loader": "^12.1.0"
+  }
+}

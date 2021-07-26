@@ -2,6 +2,7 @@ from dotenv import load_dotenv
 from flask_migrate import Migrate
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import MetaData
+from flask_debugtoolbar import DebugToolbarExtension
 
 load_dotenv()
 
@@ -16,6 +17,7 @@ metadata = MetaData(naming_convention=convention)
 
 db = SQLAlchemy(metadata=metadata)
 migrate = Migrate()
+toolbar = DebugToolbarExtension()
 
 
 def create_app():
